@@ -1,0 +1,37 @@
+# Lina-Rahmoun_Mod2#
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World JSP</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+
+    <%-- Scriptlet Section 1: Display Date and Time --%>
+    <%
+        java.util.Date currentDate = new java.util.Date();
+        out.println("<p>Current Date and Time: " + currentDate + "</p>");
+    %>
+
+    <%-- Scriptlet Section 2: Simple Calculation --%>
+    <%
+        int a = 5;
+        int b = 7;
+        int sum = a + b;
+        out.println("<p>Sum of " + a + " and " + b + " is: " + sum + "</p>");
+    %>
+
+    <%-- Scriptlet Section 3: Conditional Statement --%>
+    <%
+        String username = "Darrell";
+        if (username.equals("Darrell")) {
+            out.println("<p>Welcome, Darrell!</p>");
+        } else {
+            out.println("<p>You are not Darrell. Access denied.</p>");
+        }
+    %>
+
+</body>
+</html>
